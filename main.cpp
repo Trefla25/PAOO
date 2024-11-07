@@ -3,6 +3,15 @@
 using namespace std;
 
 int main(void){
+    Game game0;
+    cout << "Default Game information: " << endl;
+    cout << "Game Title: " << game0.getGameTitle() << endl;
+    cout << "Game Developer: " << game0.getGameDeveloper() << endl;
+    cout << "Game Price: " << game0.getGamePrice() << endl;
+    cout << "Game Rating: " << game0.getGameRating() << endl;
+
+    cout << "\n" << endl;
+
     Game game1("Elden Ring", "FromSoftware", 59.99, 9.3);
     cout << "Game1 information: " << endl;
     cout << "Game Title: " << game1.getGameTitle() << endl;
