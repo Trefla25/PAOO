@@ -8,7 +8,7 @@ class Game
     private:
         char *title;
         char *developer;
-        int *price;
+        double *price;
         double *rating;
 
     public:
@@ -17,24 +17,50 @@ class Game
     {
         title = new char[STRSIZE];
         developer = new char[STRSIZE];
-        price = new int;
+        price = new double;
         rating = new double;
     }
 
     //Basic
-    Game(const char *init_title, const char *init_developer, int init_price, double init_rating)
+    Game(const char *init_title, const char *init_developer, double init_price, double init_rating)
     {
         title = new char[STRSIZE];
         developer = new char[STRSIZE];
-        price = new int;
+        price = new double;
         rating = new double;
 
         strcpy(title, init_title);
         strcpy(developer, init_developer);
+        *price = init_price;
+        *rating = init_rating;
     }
 
     char *getGameTitle()
     {
         return title;
+    }
+
+    char *getGameDeveloper()
+    {
+        return developer;
+    }
+
+    double getGamePrice()
+    {
+        return *price;
+    }
+
+    double getGameRating()
+    {
+        return *rating;
+    }
+
+    //Deconstructor
+    ~Game()
+    {
+        delete[] title;   
+        delete[] developer; 
+        delete price;       
+        delete rating; 
     }
 };

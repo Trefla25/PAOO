@@ -68,6 +68,7 @@ CMakeFiles/tema1.dir/main.cpp.o: /home/vboxuser/Desktop/Tema1_PAOO/PAOO/main.cpp
   /usr/include/c++/13/cstddef \
   /usr/include/c++/13/cstdio \
   /usr/include/c++/13/cstdlib \
+  /usr/include/c++/13/cstring \
   /usr/include/c++/13/cwchar \
   /usr/include/c++/13/cwctype \
   /usr/include/c++/13/debug/assertions.h \
@@ -106,6 +107,8 @@ CMakeFiles/tema1.dir/main.cpp.o: /home/vboxuser/Desktop/Tema1_PAOO/PAOO/main.cpp
   /usr/include/stdc-predef.h \
   /usr/include/stdio.h \
   /usr/include/stdlib.h \
+  /usr/include/string.h \
+  /usr/include/strings.h \
   /usr/include/time.h \
   /usr/include/wchar.h \
   /usr/include/wctype.h \
@@ -286,6 +289,8 @@ CMakeFiles/tema1.dir/main.cpp.o:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
 
+/usr/include/c++/13/cstring:
+
 /usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h:
 
 /usr/include/c++/13/cstdlib:
@@ -430,6 +435,8 @@ CMakeFiles/tema1.dir/main.cpp.o:
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
+/usr/include/string.h:
+
 /usr/include/c++/13/bits/exception_ptr.h:
 
 /usr/include/c++/13/bits/refwrap.h:
@@ -486,6 +493,10 @@ CMakeFiles/tema1.dir/main.cpp.o:
 
 /usr/include/c++/13/typeinfo:
 
+/usr/include/x86_64-linux-gnu/bits/wchar.h:
+
+/usr/include/c++/13/string_view:
+
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
 /usr/include/c++/13/system_error:
@@ -519,6 +530,8 @@ CMakeFiles/tema1.dir/main.cpp.o:
 /usr/include/pthread.h:
 
 /usr/include/sched.h:
+
+/usr/include/strings.h:
 
 /usr/include/wctype.h:
 
@@ -611,7 +624,3 @@ CMakeFiles/tema1.dir/main.cpp.o:
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
-
-/usr/include/c++/13/string_view:
-
-/usr/include/x86_64-linux-gnu/bits/wchar.h:
