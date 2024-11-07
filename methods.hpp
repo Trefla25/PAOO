@@ -1,4 +1,4 @@
-# define STRSIZE 20
+# define STRSIZE 100
 #include <cstring>
 #include <string>
 using namespace std;
@@ -55,6 +55,23 @@ class Game
         return *rating;
     }
 
+    Game operator+(const Game &other)
+    {
+        char combinedTitle[STRSIZE * 2];
+        snprintf(combinedTitle, sizeof(combinedTitle), "%s + %s Bundle", title, other.title);
+     
+        char combinedDeveloper[STRSIZE * 2];
+        snprintf(combinedDeveloper, sizeof(combinedDeveloper), "%s and %s", developer, other.developer);
+
+        double discount = ((*price + *other.price)*20)/100;
+        double averagePrice = *price + *other.price - discount;
+
+        double averageRating = (*rating + *other.rating) / 2;
+
+        Game newGame(combinedTitle, combinedDeveloper, averagePrice, averageRating);
+        return newGame;
+    }
+
     //Deconstructor
     ~Game()
     {
@@ -66,5 +83,6 @@ class Game
         delete rating; 
 
         cout << "Destructed Title Should not be readable: " << title << endl;
+        cout << "\n" << endl;
     }
 };

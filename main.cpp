@@ -8,7 +8,7 @@ int main(void){
     cout << "Game Title: " << game1.getGameTitle() << endl;
     cout << "Game Developer: " << game1.getGameDeveloper() << endl;
     cout << "Game Price: " << game1.getGamePrice() << endl;
-    cout << "Game Title: " << game1.getGameRating() << endl;
+    cout << "Game Rating: " << game1.getGameRating() << endl;
 
     cout << "\n" << endl;
 
@@ -17,7 +17,18 @@ int main(void){
     cout << "Game Title: " << game2.getGameTitle() << endl;
     cout << "Game Developer: " << game2.getGameDeveloper() << endl;
     cout << "Game Price: " << game2.getGamePrice() << endl;
-    cout << "Game Title: " << game2.getGameRating() << endl;
+    cout << "Game Rating: " << game2.getGameRating() << endl;
+
+    cout << "\n" << endl;
+
+    Game game3 = game1 + game2;
+    cout << "Bundle information: " << endl;
+    cout << "Bundle Title: " << game3.getGameTitle() << endl;
+    cout << "Bundle Developers: " << game3.getGameDeveloper() << endl;
+    cout << "Bundle Price: " << game3.getGamePrice() << endl;
+    cout << "Game Rating: " << game3.getGameRating() << endl;
+
+    cout << "\n" << endl;
 
     return 0;
 }
