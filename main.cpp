@@ -13,11 +13,11 @@ int main(void){
     cout << "\n" << endl;
 
     Game game2("Slay the Spire", "Mega Crit", 24.99, 9.7);
-    cout << "Game1 information: " << endl;
-    cout << "Game Title: " << game1.getGameTitle() << endl;
-    cout << "Game Developer: " << game1.getGameDeveloper() << endl;
-    cout << "Game Price: " << game1.getGamePrice() << endl;
-    cout << "Game Title: " << game1.getGameRating() << endl;
+    cout << "Game2 information: " << endl;
+    cout << "Game Title: " << game2.getGameTitle() << endl;
+    cout << "Game Developer: " << game2.getGameDeveloper() << endl;
+    cout << "Game Price: " << game2.getGamePrice() << endl;
+    cout << "Game Title: " << game2.getGameRating() << endl;
 
     return 0;
 }

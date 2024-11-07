@@ -58,9 +58,13 @@ class Game
     //Deconstructor
     ~Game()
     {
+        cout << "Destructing: " << title << endl;
+
         delete[] title;   
         delete[] developer; 
         delete price;       
         delete rating; 
+
+        cout << "Destructed Title Should not be readable: " << title << endl;
     }
 };
