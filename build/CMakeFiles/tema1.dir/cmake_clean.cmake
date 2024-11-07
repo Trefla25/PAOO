@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/tema1.dir/link.d"
-  "CMakeFiles/tema1.dir/main.o"
-  "CMakeFiles/tema1.dir/main.o.d"
+  "CMakeFiles/tema1.dir/main.cpp.o"
+  "CMakeFiles/tema1.dir/main.cpp.o.d"
   "tema1"
   "tema1.pdb"
 )

@@ -72,28 +72,28 @@ include CMakeFiles/tema1.dir/flags.make
 CMakeFiles/tema1.dir/codegen:
 .PHONY : CMakeFiles/tema1.dir/codegen
 
-CMakeFiles/tema1.dir/main.o: CMakeFiles/tema1.dir/flags.make
-CMakeFiles/tema1.dir/main.o: /home/vboxuser/Desktop/Tema1_PAOO/PAOO/main.cpp
-CMakeFiles/tema1.dir/main.o: CMakeFiles/tema1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/Desktop/Tema1_PAOO/PAOO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tema1.dir/main.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tema1.dir/main.o -MF CMakeFiles/tema1.dir/main.o.d -o CMakeFiles/tema1.dir/main.o -c /home/vboxuser/Desktop/Tema1_PAOO/PAOO/main.cpp
+CMakeFiles/tema1.dir/main.cpp.o: CMakeFiles/tema1.dir/flags.make
+CMakeFiles/tema1.dir/main.cpp.o: /home/vboxuser/Desktop/Tema1_PAOO/PAOO/main.cpp
+CMakeFiles/tema1.dir/main.cpp.o: CMakeFiles/tema1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/Desktop/Tema1_PAOO/PAOO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tema1.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tema1.dir/main.cpp.o -MF CMakeFiles/tema1.dir/main.cpp.o.d -o CMakeFiles/tema1.dir/main.cpp.o -c /home/vboxuser/Desktop/Tema1_PAOO/PAOO/main.cpp
 
-CMakeFiles/tema1.dir/main.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tema1.dir/main.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/Desktop/Tema1_PAOO/PAOO/main.cpp > CMakeFiles/tema1.dir/main.i
+CMakeFiles/tema1.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tema1.dir/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/Desktop/Tema1_PAOO/PAOO/main.cpp > CMakeFiles/tema1.dir/main.cpp.i
 
-CMakeFiles/tema1.dir/main.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tema1.dir/main.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/Desktop/Tema1_PAOO/PAOO/main.cpp -o CMakeFiles/tema1.dir/main.s
+CMakeFiles/tema1.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tema1.dir/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/Desktop/Tema1_PAOO/PAOO/main.cpp -o CMakeFiles/tema1.dir/main.cpp.s
 
 # Object files for target tema1
 tema1_OBJECTS = \
-"CMakeFiles/tema1.dir/main.o"
+"CMakeFiles/tema1.dir/main.cpp.o"
 
 # External object files for target tema1
 tema1_EXTERNAL_OBJECTS =
 
-tema1: CMakeFiles/tema1.dir/main.o
+tema1: CMakeFiles/tema1.dir/main.cpp.o
 tema1: CMakeFiles/tema1.dir/build.make
 tema1: CMakeFiles/tema1.dir/compiler_depend.ts
 tema1: CMakeFiles/tema1.dir/link.txt
