@@ -1,0 +1,3 @@
+/home/vboxuser/Desktop/Tema1_PAOO/PAOO/build/CMakeFiles/tema1.dir
+/home/vboxuser/Desktop/Tema1_PAOO/PAOO/build/CMakeFiles/edit_cache.dir
+/home/vboxuser/Desktop/Tema1_PAOO/PAOO/build/CMakeFiles/rebuild_cache.dir
