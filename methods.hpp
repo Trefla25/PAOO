@@ -57,6 +57,7 @@ class Game
 
     Game operator+(const Game &other)
     {
+        cout << "Operator Changed" << endl;
         char combinedTitle[STRSIZE * 2];
         snprintf(combinedTitle, sizeof(combinedTitle), "%s + %s Bundle", title, other.title);
      
