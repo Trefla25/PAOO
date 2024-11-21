@@ -1,43 +1,24 @@
-#include <iostream>
-#include "methods.hpp"
+#include "game.hpp"
 using namespace std;
 
-int main(void){
-    Game game0;
-    cout << "Default Game information: " << endl;
-    cout << "Game Title: " << game0.getGameTitle() << endl;
-    cout << "Game Developer: " << game0.getGameDeveloper() << endl;
-    cout << "Game Price: " << game0.getGamePrice() << endl;
-    cout << "Game Rating: " << game0.getGameRating() << endl;
-
-    cout << "\n" << endl;
-
+int main() {
+    // Item 4: No uninitialized objects - all members initialized in constructors
     Game game1("Elden Ring", "FromSoftware", 59.99, 9.3);
-    cout << "Game1 information: " << endl;
-    cout << "Game Title: " << game1.getGameTitle() << endl;
-    cout << "Game Developer: " << game1.getGameDeveloper() << endl;
-    cout << "Game Price: " << game1.getGamePrice() << endl;
-    cout << "Game Rating: " << game1.getGameRating() << endl;
-
-    cout << "\n" << endl;
+    game1.displayInfo();
+    std::cout << std::endl;
 
     Game game2("Slay the Spire", "Mega Crit", 24.99, 9.7);
-    cout << "Game2 information: " << endl;
-    cout << "Game Title: " << game2.getGameTitle() << endl;
-    cout << "Game Developer: " << game2.getGameDeveloper() << endl;
-    cout << "Game Price: " << game2.getGamePrice() << endl;
-    cout << "Game Rating: " << game2.getGameRating() << endl;
+    game2.displayInfo();
+    std::cout << std::endl;
 
-    cout << "\n" << endl;
+    // Item 5: Class hierarchy with base and derived class
+    Media* media_ptr = new Game("Cyberpunk 2077", "CD Projekt", 29.99, 7.5); // Polymorphism
+    media_ptr->displayInfo();
+    delete media_ptr; // Demonstrates destruction order
+    std::cout << std::endl;
 
-    Game game3 = game1 + game2;
-    cout << "Bundle information: " << endl;
-    cout << "Bundle Title: " << game3.getGameTitle() << endl;
-    cout << "Bundle Developers: " << game3.getGameDeveloper() << endl;
-    cout << "Bundle Price: " << game3.getGamePrice() << endl;
-    cout << "Game Rating: " << game3.getGameRating() << endl;
-
-    cout << "\n" << endl;
+    // Item 6: Copy/move constructors disabled
+    // Game game3 = game1; // Uncommenting this line will cause a compilation error due to deleted copy constructor
 
     return 0;
 }

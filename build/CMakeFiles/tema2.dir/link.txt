@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file,CMakeFiles/tema2.dir/link.d CMakeFiles/tema2.dir/main.cpp.o -o tema2
