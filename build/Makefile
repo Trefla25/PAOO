@@ -48,10 +48,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/cmake/1429/bin/cmake
+CMAKE_COMMAND = /snap/cmake/1433/bin/cmake
 
 # The command to remove a file.
-RM = /snap/cmake/1429/bin/cmake -E rm -f
+RM = /snap/cmake/1433/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -78,7 +78,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	/snap/cmake/1429/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/cmake/1433/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named tema2
+# Target rules for targets named tema3
 
 # Build rule for target.
-tema2: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tema2
-.PHONY : tema2
+tema3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tema3
+.PHONY : tema3
 
 # fast build rule for target.
-tema2/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tema2.dir/build.make CMakeFiles/tema2.dir/build
-.PHONY : tema2/fast
+tema3/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tema3.dir/build.make CMakeFiles/tema3.dir/build
+.PHONY : tema3/fast
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tema2.dir/build.make CMakeFiles/tema2.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tema3.dir/build.make CMakeFiles/tema3.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -142,7 +142,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tema2.dir/build.make CMakeFiles/tema2.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tema3.dir/build.make CMakeFiles/tema3.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -150,7 +150,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tema2.dir/build.make CMakeFiles/tema2.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tema3.dir/build.make CMakeFiles/tema3.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -161,7 +161,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... tema2"
+	@echo "... tema3"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

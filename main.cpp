@@ -1,25 +1,46 @@
+#include <memory>
 #include "game.hpp"
 using namespace std;
 
 int main() {
-    //all members initialized in constructors
-    Game game1("Elden Ring", "FromSoftware", 59.99, 9.3);
-    game1.displayInfo();
-    std::cout << std::endl;
+    // unique
+    unique_ptr<Game> game1 = make_unique<Game>("Elden Ring", "FromSoftware", 59.99, 9.3);
+    game1->displayInfo();
+    cout << endl;
 
-    Game game2("Slay the Spire", "Mega Crit", 24.99, 9.7);
-    game2.displayInfo();
-    std::cout << std::endl;
+    //shared
+    shared_ptr<Game> game2 = make_shared<Game>("Slay the Spire", "Mega Crit", 24.99, 9.7);
+    game2->displayInfo();
+    cout << endl;
 
-    //Class hierarchy with base and derived class
-    Media* media_ptr = new Game("Cyberpunk 2077", "CD Projekt", 29.99, 7.5); // Polymorphism
+    //shared_ptr behavior
+    shared_ptr<Game> game3 = game2; // Shared ownership
+    cout << "Shared pointer reference count: " << game2.use_count() << endl;
+
+    //polymorphism with smart pointers
+    unique_ptr<Media> media_ptr = make_unique<Game>("Cyberpunk 2077", "CD Projekt", 29.99, 7.5);
     media_ptr->displayInfo();
-    delete media_ptr;
-    std::cout << std::endl;
+    cout << endl;
 
-    // Copy/move constructors disabled
-    //Game game3 = game1; //compilation error, deleted copy constrructor
-    ///game1 = game2; // deleted operator
+    //Copy 
+    Game game4 = *game1;
+    game4.displayInfo();
+    cout << endl;
+
+    Game game5("The Bazaar", "Tempo", 33, 9);
+    game5 = *game1;
+    game5.displayInfo();
+    cout << endl;
+
+    // Move
+    Game game6 = std::move(*game1);
+    game6.displayInfo();
+    cout << endl;
+
+    Game game7("World of Warcraft", "Blizzard", 60, 9);
+    game7 = std::move(game6);
+    game7.displayInfo();
+    cout << endl;
 
     return 0;
 }

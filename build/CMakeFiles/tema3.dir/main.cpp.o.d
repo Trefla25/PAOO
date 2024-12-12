@@ -1,4 +1,4 @@
-CMakeFiles/tema2.dir/main.cpp.o: \
+CMakeFiles/tema3.dir/main.cpp.o: \
  /home/vboxuser/Desktop/Tema1_PAOO/PAOO/main.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/13/memory \
  /usr/include/c++/13/bits/memoryfwd.h \
